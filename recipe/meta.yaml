@@ -16,9 +16,10 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
+  build:
+    - {{ compiler('c') }}
   host:
     - python
-    - toolchain
     - numpy 1.9.*
     - setuptools
     - setuptools_scm
