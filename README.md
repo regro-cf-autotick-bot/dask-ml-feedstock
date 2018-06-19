@@ -15,14 +15,16 @@ Distributed and parallel machine learning using dask.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/dask-ml-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/dask-ml-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/dask-ml-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/dask-ml-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/dask-ml-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/dask-ml-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/dask-ml-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/dask-ml-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/dask-ml-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/dask-ml-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/dask-ml-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/dask-ml-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dask-ml/badges/version.svg)](https://anaconda.org/conda-forge/dask-ml)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dask-ml/badges/downloads.svg)](https://anaconda.org/conda-forge/dask-ml)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-dask--ml-green.svg)](https://anaconda.org/conda-forge/dask-ml) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/dask-ml.svg)](https://anaconda.org/conda-forge/dask-ml) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/dask-ml.svg)](https://anaconda.org/conda-forge/dask-ml) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/dask-ml.svg)](https://anaconda.org/conda-forge/dask-ml) |
 
 Installing dask-ml
 ==================

@@ -1,6 +1,6 @@
 {% set name = "dask-ml" %}
-{% set version = "0.4.1" %}
-{% set sha256 = "b82cb48727dc04ea0c3b498a8d36f604605b8585f899cfb23bd5fe2162a0648c" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "525bcc52a74e431010d82ef08552761870eeb55596bb90999ca2baa7e2e0ae78" %}
 
 package:
   name: {{ name|lower }}
@@ -13,23 +13,23 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
-    - toolchain
+    - pip
+    - numpy 1.11.*
     - setuptools
     - setuptools_scm
     - cython
-    - numpy 1.9.*  # [py27 or py35]
-    - numpy 1.11.*  # [py36]
   run:
+    - {{ pin_compatible('numpy') }}
     - dask
     - dask-glm
     - dask-searchcv
-    - numpy >=1.11.*  # [py36]
-    - numpy >=1.9.*  # [py27 or py35]
     - pandas
     - python
     - scikit-learn
