@@ -21,7 +21,8 @@ requirements:
   host:
     - python
     - pip
-    - numpy 1.9.*
+    - numpy 1.9.*     # [not (win and py36)]
+    - numpy 1.11.*    # [win and py36]
     - setuptools
     - setuptools_scm
     - cython
