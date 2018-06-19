@@ -13,23 +13,21 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
     - python
     - toolchain
+    - numpy 1.9.*
     - setuptools
     - setuptools_scm
     - cython
-    - numpy 1.9.*  # [py27 or py35]
-    - numpy 1.11.*  # [py36]
   run:
+    - {{ pin_compatible('numpy') }}
     - dask
     - dask-glm
     - dask-searchcv
-    - numpy >=1.11.*  # [py36]
-    - numpy >=1.9.*  # [py27 or py35]
     - pandas
     - python
     - scikit-learn
