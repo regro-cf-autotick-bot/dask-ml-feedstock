@@ -1,6 +1,6 @@
 {% set name = "dask-ml" %}
-{% set version = "0.6.0" %}
-{% set sha256 = "525bcc52a74e431010d82ef08552761870eeb55596bb90999ca2baa7e2e0ae78" %}
+{% set version = "0.7.0" %}
+{% set sha256 = "475f8af7ccd9331803fe7583f4093b36b0aa98a38e7462c46412acd4daf9fdee" %}
 
 package:
   name: {{ name|lower }}
@@ -29,7 +29,6 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - dask
     - dask-glm
-    - dask-searchcv
     - pandas
     - python
     - scikit-learn
