@@ -1,6 +1,6 @@
 {% set name = "dask-ml" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "90bf6b67e79bb2a3aa15f1f895adb88914298b5fd9208958dd220817e0107986" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "bd33464f67d4fdc1b1afc18152dc77a6127a24775f3a2649879b89e4611abafb" %}
 
 package:
   name: {{ name|lower }}
@@ -12,25 +12,24 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
-    - {{ compiler('c') }}
   host:
     - python
     - pip
-    - numpy 1.11.*
     - setuptools
     - setuptools_scm
-    - cython
   run:
-    - {{ pin_compatible('numpy') }}
-    - dask
+    - dask >=0.18.2
     - dask-glm
+    - multipledispatch >=0.4.9
+    - numba
+    - numpy
     - packaging
-    - pandas
+    - pandas >=0.21.0
     - python
     - scikit-learn
     - scipy
@@ -40,8 +39,15 @@ requirements:
 test:
   imports:
     - dask_ml
+    - dask_ml.cluster
+    - dask_ml.decomposition
+    - dask_ml.feature_extraction
+    - dask_ml.linear_model
+    - dask_ml.metrics
+    - dask_ml.model_selection
+    - dask_ml.preprocessing
     - dask_ml.utils
-    - dask_ml.cluster.k_means
+    - dask_ml.wrappers
 
 about:
   home: http://github.com/dask/dask-ml
