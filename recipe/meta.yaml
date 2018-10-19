@@ -1,6 +1,6 @@
 {% set name = "dask-ml" %}
-{% set version = "0.10.0" %}
-{% set sha256 = "4b6ca548c7282c1b6983e696e4bdfa0a2d7b51b168928b9322ea7a4b9a9f20f9" %}
+{% set version = "0.11.0" %}
+{% set sha256 = "a9e8e69494560dc23534adb236e88b3b21dc30a156648453c9c6e4b27ff2df96" %}
 
 package:
   name: {{ name|lower }}
@@ -31,7 +31,7 @@ requirements:
     - packaging
     - pandas >=0.21.0
     - python
-    - scikit-learn
+    - scikit-learn >=0.20.0
     - scipy
     - setuptools
     - six
@@ -57,7 +57,7 @@ about:
   summary: 'Distributed and parallel machine learning using dask.'
   description: |
     Distributed and parallel machine learning using dask.
-  doc_url: http://dask-ml.readthedocs.io/
+  doc_url: https://ml.dask.org
   dev_url: https://github.com/dask/dask-ml
 
 extra:
