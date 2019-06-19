@@ -1,6 +1,6 @@
 {% set name = "dask-ml" %}
-{% set version = "0.13.0" %}
-{% set sha256 = "dc927e115d1e9b8acdf1739d9bb01355b3b2af247ca653b41c3b0108bf4585c7" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "dde926478653bd03a3fbc501d3873a1534836608217b94d04320d1e1c07e59dc" %}
 
 package:
   name: {{ name|lower }}
@@ -18,7 +18,7 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
     - setuptools
     - setuptools_scm
@@ -31,7 +31,7 @@ requirements:
     - numpy
     - packaging
     - pandas >=0.23.0
-    - python
+    - python >=3
     - scikit-learn >=0.20.0
     - scipy
     - setuptools
