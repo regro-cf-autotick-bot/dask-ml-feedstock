@@ -18,7 +18,7 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
     - setuptools
     - setuptools_scm
@@ -31,7 +31,7 @@ requirements:
     - numpy
     - packaging
     - pandas >=0.23.0
-    - python
+    - python >=3
     - scikit-learn >=0.20.0
     - scipy
     - setuptools
