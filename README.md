@@ -118,4 +118,5 @@ Feedstock Maintainers
 =====================
 
 * [@TomAugspurger](https://github.com/TomAugspurger/)
+* [@jrbourbeau](https://github.com/jrbourbeau/)
 
