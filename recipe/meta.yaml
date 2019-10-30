@@ -24,7 +24,7 @@ requirements:
     - setuptools_scm
   run:
     - dask >=1.0.0
-    - dask-glm
+    - dask-glm >=0.2.0
     - distributed >=1.25.0
     - multipledispatch >=0.4.9
     - numba
