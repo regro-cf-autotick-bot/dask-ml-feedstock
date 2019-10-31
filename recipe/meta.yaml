@@ -1,6 +1,6 @@
 {% set name = "dask-ml" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "1a62ebc1f80759882e45081f8e0177f36599d4dff38c272f3cb08550251bd1aa" %}
+{% set version = "1.1.1" %}
+{% set sha256 = "fd8830543f1be6024b1342b64ecff58b3dc9c891ee856a5c5b598006d34a4df9" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
